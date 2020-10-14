@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>调查问卷</title>
+    <link rel="stylesheet" href="CSS/index.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">调查问卷</h1>
+            <p id="description">感谢您在百忙之中抽取时间填写这份问卷</p>
+        </header>
+        <form action="post" id="surver-form">
+            <div class="form-row">
+                <label for="name" id="name-label">姓名</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="请输入您的姓名" required>
+            </div>
+            <div class="form-row">
+                <label for="email" id="email-label">邮箱</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="请输入您的常用邮箱" required>
+            </div>
+            <div class="form-row">
+                <label for="number" id="number-label">年龄</label>
+                <input type="number" id="number" name="age" class="form-control" min="14" max="99" placeholder="请输入您的年龄" required>
+            </div>
+            <div class="form-row">
+                <p>您喜欢什么食物？</p>
+                <select name="food" id="dropdown" class="form-control" required>
+                    <option disabled selected value="">请在下拉菜单中选择</option>
+                    <option value="螺蛳粉">螺蛳粉</option>
+                    <option value="臭豆腐">臭豆腐</option>
+                    <option value="榴莲">榴莲</option>
+                    <option value="腐乳">腐乳</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <p>为什么会喜欢这个食物？</p>
+                <label for="radio-one">
+                    <input type="radio" id="radio-one" name="like-reason" value="" class="input-radio">
+                    太好吃了，吃一次就停不下来！
+                </label>
+                <label for="radio-two">
+                    <input type="radio" id="radio-two" name="like-reason" value="" class="input-radio">
+                    朋友推荐的。
+                </label>
+                <label for="radio-three">
+                    <input type="radio" id="radio-three" name="like-reason" value="" class="input-radio">
+                    父母遗传的。
+                </label>
+            </div>
+            <div class="form-row">
+                <p>吃这种食物的途径有哪些？</p>
+                <label for="checkbox-one">
+                    <input type="checkbox" name="pathway" value="" class="inpute-checkbox" id="checkbox-one">
+                    线下门店
+                </label>
+                <label for="checkbox-two">
+                    <input type="checkbox" name="pathway" value="" class="inpute-checkbox" id="checkbox-two">
+                    网上订餐
+                </label>
+                <label for="checkbox-three">
+                    <input type="checkbox" name="pathway" value="" class="inpute-checkbox" id="checkbox-three">
+                    自己制作
+                </label>
+                <label for="checkbox-four">
+                    <input type="checkbox" name="pathway" value="" class="inpute-checkbox" id="checkbox-four">
+                    淘宝购买
+                </label>
+            </div>
+            <div class="form-row">
+                <p>给出您宝贵的意见或者建议帮助我们了解更多关于美食的情况</p>
+                <textarea name="comments" id="comments" class="input-textarea" placeholder="在此输入您的意见或者建议"></textarea>
+            </div>
+            <div class="form-row">
+                <button type="submit">提交</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
